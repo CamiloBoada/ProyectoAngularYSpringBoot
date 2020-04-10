@@ -9,5 +9,5 @@ public interface IUsuarioDao {
 	
 	public List<Usuario> listar();
 	
-	public Usuario login(String usuario, String password);
+	public Usuario login(String username, String password);
 }
