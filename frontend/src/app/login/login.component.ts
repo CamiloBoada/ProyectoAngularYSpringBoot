@@ -12,6 +12,7 @@ export class LoginComponent implements OnInit {
 
   loginForm: FormGroup;
   submitted = false;
+  mostrarError = false;
   
   constructor(private router: Router, private formBuilder: FormBuilder, private service: AutenticacionService) { }
 
@@ -39,7 +40,7 @@ export class LoginComponent implements OnInit {
   }
 
   handleErrorResponse(error) {
-    alert('Usuario o clave invalida');
+    this.mostrarError=true;
     console.log('Error mensaje: ' + JSON.stringify(error.error));
   }
 }

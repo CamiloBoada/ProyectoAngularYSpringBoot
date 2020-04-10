@@ -3,28 +3,28 @@
     <div class="form-group">
         <label for="nombre">Nombre</label>
         <input type="text" formControlName="nombre" class="form-control" />
-        <div *ngIf="submitted && registrarForm.get('nombre').errors">
+        <div *ngIf="submitted && registrarForm.get('nombre').errors" class="text-danger">
             <div *ngIf="registrarForm.get('nombre').errors">Nombre es requerido</div>
         </div>
     </div>
     <div class="form-group">
         <label for="apellido">Apellido</label>
         <input type="text" formControlName="apellido" class="form-control" />
-        <div *ngIf="submitted && registrarForm.get('apellido').errors">
+        <div *ngIf="submitted && registrarForm.get('apellido').errors" class="text-danger">
             <div *ngIf="registrarForm.get('apellido').errors">Apellido es requerido</div>
         </div>
     </div>
     <div class="form-group">
         <label for="usuario">Usuario</label>
         <input type="text" formControlName="usuario" class="form-control" />
-        <div *ngIf="submitted && registrarForm.get('usuario').errors">
+        <div *ngIf="submitted && registrarForm.get('usuario').errors" class="text-danger">
             <div *ngIf="registrarForm.get('usuario').errors">Usuario es requerido</div>
         </div>
     </div>
     <div class="form-group">
         <label for="password">Password</label>
         <input type="password" formControlName="password" class="form-control" />
-        <div *ngIf="submitted && registrarForm.get('password').errors">
+        <div *ngIf="submitted && registrarForm.get('password').errors" class="text-danger">
             <div *ngIf="registrarForm.get('password').errors">Password es requerido</div>
         </div>
     </div>
